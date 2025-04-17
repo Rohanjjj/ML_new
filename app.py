@@ -10,7 +10,7 @@ model = joblib.load('model.pkl')
 app = Flask(__name__)
 
 # External server URL to send the prediction
-external_server_url = "http://external-server-url.com/api"  # Replace with actual URL
+external_server_url = "https://vser.onrender.com"  # Replace with actual URL
 
 @app.route('/', methods=['POST'])
 def predict():
